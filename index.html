@@ -427,7 +427,7 @@
 
     .swords-1 {
         display: inline;
-        margin-left: -4px;
+        margin-left: -3px;
         margin-bottom: -2px;
     }
 
@@ -440,23 +440,28 @@
 
     a:hover .swords {
         opacity: 100%;
-        margin-right: 7px;
+        margin-right: 6px;
     }
 
     a:hover .swords-1 {
-        transform: rotate(45deg);
+        transform: rotate(-10deg);
         z-index: -1;
-        margin-right: -7px;
-        transition-duration: 0.4s;
+        margin-right: -6px;
+        transition-duration: 0.5s;
     }
 
     a:hover .swords-2 {
-        transform: rotate(-45deg);
-        transition-duration: 0.4s;
+        transform: rotate(10deg);
+        transition-duration: 0.5s;
     }
 
     a:not(:hover) .swords-2 {
-        transition-duration: 0.2s;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+
+    a:not(:hover) .swords-1 {
+        transition-duration: 0.3s;
         transition-timing-function: linear;
     }
 
@@ -469,7 +474,7 @@
     a:hover .rating {
         fill: #fff;
         opacity: 100%;
-        transform: rotate(360deg);
+        transform: rotate(260deg);
         transition-duration: 2s;
     }
 
